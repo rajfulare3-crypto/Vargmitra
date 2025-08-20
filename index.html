@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VargMitra - AI Study & Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>📖 VargMitra - AI Study & Practice</h1>
+        <nav>
+            <button onclick="showPage('home')">Home</button>
+            <button onclick="showPage('add')">Add Chapter</button>
+            <button onclick="showPage('library')">My Library</button>
+            <button onclick="showPage('practice')">Start Practice</button>
+        </nav>
+    </header>
+
+    <main id="content">
+        <section id="home" class="page">
+            <h2>Welcome Student 👋</h2>
+            <p>This is <b>VargMitra</b> — your AI-powered study companion.</p>
+            <p>Select an option above to get started.</p>
+        </section>
+
+        <section id="add" class="page hidden">
+            <h2>Add New Chapter</h2>
+            <form>
+                <label>Chapter Name: <input type="text" placeholder="e.g. Biology - Life Processes"></label><br><br>
+                <label>Upload Book Pages: <input type="file" multiple></label><br><br>
+                <button type="button">Upload</button>
+            </form>
+        </section>
+
+        <section id="library" class="page hidden">
+            <h2>My Library</h2>
+            <p>No chapters yet. Add one from "Add Chapter".</p>
+        </section>
+
+        <section id="practice" class="page hidden">
+            <h2>Practice Mode</h2>
+            <p>AI questions will appear here (coming soon 🚀).</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
